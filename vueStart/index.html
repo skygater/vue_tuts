@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Naslov 1</title>
+</head>
+<body>
+
+  <div id="sec1">
+    <input type="text" name="" value="" id="input" v-model="message">
+    <p>Message is: {{ message }}</p>
+  </div>
+
+<div id="sec2">
+
+  <ul>
+    <li v-for="message in messages" v-text="message"></li>
+  </ul>
+
+  <input type="text" id='msg' v-model="newName">
+  <button v-on:click="addName" type="button" id="button">Press button</button>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script type="text/javascript">
+  new Vue ({
+    el: '#sec1',
+    data:{
+      message:'Hello world'
+    }
+  });
+  var app = new Vue ({
+
+    el:'#sec2',
+    data:{
+      newName: '',
+      messages: ['Hello World','Hello how are you?','What is up?','Hey hey']
+    },
+    methods:{
+      addName(){
+         this.messages.push(this.newName);
+         this.newName = '';
+      }
+    }
+
+  });
+  </script>
+
+</body>
+</html>

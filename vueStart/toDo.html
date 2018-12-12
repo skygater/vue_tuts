@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To do  List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  </head>
+  <body>
+    <!-- <div id="root">
+
+    <h2>All tasks</h2>
+    <ul>
+    <li v-for="task in incompletedTasks" v-text="task.description" ></li>
+    </ul>
+    <h2>Completed Tasks</h2>
+    <ul>
+      <li v-for="task in completedTasks" v-text="task.description"></li>
+    </ul>
+    </div>
+<br><br> -->
+    <div id="root2">
+      <!-- <task-list> </task-list> -->
+      <!-- <message title="Hellloo1" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit"> </message> -->
+    <!-- <modal v-show="isShown" @close="isShow = false">HELLO HELLO </modal>
+    <button type="button" @click="showModal" >Show/Hide</button> -->
+    <tabs>
+      <tab name="Tab 1" :selected = "true">
+          <h1>Content 1, Lorem ipsum dolor sit amet, consect</h1>
+      </tab>
+      <tab name="Tab 2" :selected = "true">
+        <h1>Content 2, Lorem ipsum dolor sit amet, consect</h1>
+      </tab>
+      <tab name="Tab 3" :selected = "true">
+        <h1>Content 3, Lorem ipsum dolor sit amet, consect</h1>
+      </tab>
+
+    </tabs>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="tabs.js"></script>
+<script type="text/javascript">
+// var app = new Vue ({
+//     el: '#root',
+//     data:{
+//       tasks:[
+//           {description:'Do something 1', completed: false},
+//           {description:'Do something 2', completed: true},
+//           {description:'Do something 3', completed: false},
+//           {description:'Do something 4', completed: true}
+//       ]
+//     },
+//     computed:{
+//       completedTasks(){
+//         return this.tasks.filter(task =>  task.completed );
+//       },
+//       incompletedTasks(){
+//         return this.tasks.filter(task => ! task.completed);
+//
+//       }
+//     }
+//
+// });
+</script>
+  </body>
+</html>
